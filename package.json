@@ -1,0 +1,20 @@
+{
+  "name": "sourcejs-sass",
+  "version": "0.1.0",
+  "description": "Parses linked SASS files using Node Sass",
+  "main": "core/middleware/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "sourcejs",
+    "middleware",
+    "sass"
+  ],
+  "author": "Johannes Fischer",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "node-sass": "^4.5.0"
+  }
+}
