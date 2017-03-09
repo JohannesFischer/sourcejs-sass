@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "Parses linked SASS files using Node Sass",
   "main": "core/middleware/index.js",
-  "scripts": {
-    "test": "test"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohannesFischer/sourcejs-sass.git"
   },
   "keywords": [
     "sourcejs",
@@ -16,5 +17,12 @@
   "dependencies": {
     "cheerio": "^0.22.0",
     "node-sass": "^4.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/JohannesFischer/sourcejs-sass/issues"
+  },
+  "homepage": "https://github.com/JohannesFischer/sourcejs-sass#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
