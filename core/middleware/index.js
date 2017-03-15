@@ -28,7 +28,7 @@ exports.process = function (req, res, next) {
 
       if (result) {
         var style = $('<style type="text/css">' + result.css.toString() + '</style>');
-        $('h1').before(style);
+        $('link').before(style);
       }
     }
 
