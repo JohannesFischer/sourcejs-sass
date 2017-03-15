@@ -1,7 +1,7 @@
-Pug support for SourceJS
+SASS support for SourceJS Specs
 ===============
 
-[SourceJS](http://sourcejs.com) middleware to support [Pug](https://pugjs.org/) markup language (`*.pug`) instead of native `*.src`.
+[SourceJS](http://sourcejs.com) middleware to support SASS files linked in spec files
 
 Works with SourceJS v.0.5.6+.
 
@@ -9,25 +9,32 @@ Works with SourceJS v.0.5.6+.
 
 To install, run npm in `sourcejs/user` folder:
 
-```
-npm i sourcejs-pug -S
+```bash
+npm i sourcejs-sass -S
 ```
 
 Then restart your SourceJS application, middleware will be loaded automatically.
 
 ## Usage
 
-After installing middleware, instead of `index.src` pages, you can `index.pug` files with Pug markup.
+After installing middleware, linked `.scss` files will be parsed and replaced with style tag containing rendered CSS
 
-index.pug
+```html
+<link href="style.scss" rel="stylesheet">
 
+...
+
+My Sepcs
 ```
-h1 Pug - node template engine
 
-#container.col
-  p.
-    Pug is a terse and simple
-    templating language with a
-    strong focus on performance
-    and powerful features.
+Will be replaced with:
+
+```html
+<style type="text/css">
+ ... my parsed CSS
+</style>
+
+...
+
+My Sepcs
 ```
